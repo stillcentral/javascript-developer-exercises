@@ -7,6 +7,8 @@ var totalOfOddDigits = oneToFive.reduce(function(accumulator, currentValue) {
   // of only the odd digits. Do not alter any other code.
   // PLACE YOUR CODE BELOW
 
+    return accumulator += currentValue & 1 ? currentValue : 0;
+
   // PLACE YOUR CODE ABOVE
 }, 0)
 

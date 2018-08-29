@@ -12,6 +12,21 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+    // just in case, if the colors are the same, return color1
+    if(color1 === color2){
+        return color1;
+    }
+    var colors_array = [color1, color2];
+    if(colors_array.indexOf('blue') != -1 && colors_array.indexOf('red') != -1){
+        return 'purple';
+    }else if(colors_array.indexOf('green') != -1 && colors_array.indexOf('red') != -1){
+        return 'brown';
+    }else if(colors_array.indexOf('blue') != -1 && colors_array.indexOf('yellow') != -1){
+        return 'green';
+    }else{
+        return 'unknown';
+    }
+
   // PLACE YOUR CODE ABOVE
 }
 

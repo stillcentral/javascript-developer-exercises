@@ -8,6 +8,10 @@ function createAddFunction(numberToAdd) {
   */
   // PLACE YOUR CODE BELOW
 
+    return function(numberToAddAfter){
+        return numberToAdd + numberToAddAfter;
+    }
+
   // PLACE YOUR CODE ABOVE
 }
 

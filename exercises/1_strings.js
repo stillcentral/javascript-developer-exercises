@@ -22,6 +22,12 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+var new_words = [];
+for(var i in words){
+    new_words.push(words[i].substring(1, 3));
+}
+wordList = new_words.join(', ');
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 1_strings.js" you should see the following on
